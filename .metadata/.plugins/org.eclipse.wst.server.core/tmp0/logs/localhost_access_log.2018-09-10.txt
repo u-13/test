@@ -1,0 +1,7 @@
+127.0.0.1 - - [10/Sep/2018:16:54:18 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [10/Sep/2018:16:54:21 +0900] "GET /WebProj4/ HTTP/1.1" 200 2108
+0:0:0:0:0:0:0:1 - - [10/Sep/2018:16:54:31 +0900] "GET /WebProj4/TestAction.action?username=fff&password=ssss HTTP/1.1" 200 357
+127.0.0.1 - - [10/Sep/2018:17:25:21 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [10/Sep/2018:17:25:23 +0900] "GET /WebProj4/ HTTP/1.1" 200 2108
+0:0:0:0:0:0:0:1 - - [10/Sep/2018:17:25:29 +0900] "GET /WebProj4/TestAction.action?username=aaa&password=sss HTTP/1.1" 200 504
+0:0:0:0:0:0:0:1 - - [10/Sep/2018:17:26:21 +0900] "POST /WebProj4/TestAction.action HTTP/1.1" 200 553
