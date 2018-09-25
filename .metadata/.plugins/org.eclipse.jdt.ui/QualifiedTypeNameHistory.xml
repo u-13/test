@@ -9,4 +9,5 @@
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="freemarker.template.utility.DateUtil"/>
 </qualifiedTypeNameHistroy>
