@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import com.internousdev.ecsite.dto.LoginDTO;
 import com.internousdev.ecsite.util.DBConnector;
 
 public class LoginDAO {
@@ -33,7 +34,7 @@ public class LoginDAO {
 		}catch(Exception e){
 			e.printStackTrace();
 		}
-		retrun loginDTO;
+		return loginDTO;
 	}
 
 	public LoginDTO getLoginDTO(){

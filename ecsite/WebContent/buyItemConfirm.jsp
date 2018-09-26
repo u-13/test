@@ -55,8 +55,8 @@
 	</style>
 	<script type="text/javascript">
 			function submitAction(url){
-				$('from').attr('action',url);
-				$('from').submit();
+				$('form').attr('action',url);
+				$('form').submit();
 			}
 	</script>
 </head>
@@ -76,7 +76,7 @@
 				</tr>
 				<tr>
 					<td>値段</td>
-					<td><s:property value="session.buyItem_name"/></td>
+					<td><s:property value="session.buyItem_price"/></td>
 				</tr>
 				<tr>
 					<td>購入個数</td>
@@ -93,7 +93,7 @@
 					<td><input type="button" value="戻る"
 							onclick="submitAction('HomeAction')"/></td>
 					<td><input type="button" value="完了"
-							onclick="submitAction('BuyItemComfirmAction')"/></td>
+							onclick="submitAction('BuyItemConfirmAction')"/></td>
 				</tr>
 			</s:form>
 		</div>

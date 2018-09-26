@@ -33,8 +33,8 @@ public class UserCreateCompleteAction extends ActionSupport implements SessionAw
 	public String getLoginPassword(){
 		return loginPassword;
 	}
-	public void setLoginPassword(String userName){
-		this.userName=userName;
+	public void setLoginPassword(String loginPassword){
+		this.loginPassword=loginPassword;
 	}
 	public String getUserName(){
 		return userName;

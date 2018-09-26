@@ -5,8 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import com.internousdev.ecsite.util.DBConnector;
-
-import freemarker.template.utility.DateUtil;
+import com.internousdev.ecsite.util.DateUtil;
 
 public class BuyItemCompleteDAO {
 	private DBConnector dbConnector=new DBConnector();
@@ -21,7 +20,7 @@ public class BuyItemCompleteDAO {
 			preparedStatement.setString(3,total_count);
 			preparedStatement.setString(4,user_master_id);
 			preparedStatement.setString(5,pay);
-			preparedStatement.setString(6,dateUtil.getDate);
+			preparedStatement.setString(6,dateUtil.getDate());
 			preparedStatement.execute();
 		}catch(Exception e){
 			e.printStackTrace();
