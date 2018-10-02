@@ -68,13 +68,6 @@
 			<result name="back">buyItem.jsp</result>
 		</action>
 
-		<!-- BuyItemCompleteAction -->
-<!-- 		<action name="BuyItemCompleteAction" -->
-<!-- 				class="com.internousdev.ecsite.action.BuyItemCompleteAction" -->
-<!-- 				method="execute"> -->
-<!-- 			<result name="success">home.jsp</result> -->
-<!-- 		</action> -->
-
 		<!-- MyPageAction -->
 		<action name="MyPageAction"
 				class="com.internousdev.ecsite.action.MyPageAction"
@@ -89,5 +82,20 @@
 				method="execute">
 			<result name="success">home.jsp</result>
 		</action>
+
+		<!-- AddItemAction -->
+		<action name="AddItemAction"
+				class="com.internousdev.ecsite.action.AddItemAction"
+				method="execute">
+			<result name="success">addItem.jsp</result>
+		</action>
+
+		<!-- AddItemConfirmAction -->
+		<action name="AddItemConfirmAction"
+				class="com.internousdev.ecsite.action.AddItemConfirmAction"
+				method="execute">
+			<result name="success">addItemConfirm.jsp</result>
+		</action>
+
 	</package>
 </struts>
