@@ -24,7 +24,13 @@
 			color:#333;
 			background:#fff;
 		}
-		table{
+		.table1{
+			width:300px;
+			border-collapse:collapse;
+			text-align:center;
+			margin:0 auto;
+		}
+		.table2{
 			text-align:center;
 			margin:0 auto;
 		}
@@ -61,30 +67,24 @@
 		<div id="top">
 			<p>BuyItem</p>
 		</div>
+		<s:if test="!checkListErrorMessageList.isEmpty()">
+		<div>
+			<div>
+				<s:iterator value="checkListErrorMessageList"><s:property /><br></s:iterator>
+			</div>
+		</div>
+		</s:if>
 		<div>
 			<s:form action="BuyItemAction">
-			<table>
+			<table border="1" class="table1">
 				<tr>
-					<td>
-						<span>商品名</span>
-					</td>
-					<td>
-						<s:property value="session.buyItem_name"/><br>
-					</td>
+					<th>#</th><th>商品名</th><th>値段</th><th>購入個数</th>
 				</tr>
+				<s:iterator value="buyItemDTOList">
 				<tr>
-					<td>
-						<span>値段</span>
-					</td>
-					<td>
-						<s:property value="session.buyItem_price"/>
-						<span>円</span>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<span>購入個数</span>
-					</td>
+					<td><s:checkbox name="checkList" value="checked" fieldValue="%{id}"/></td>
+					<td><s:property value="itemName"/></td>
+					<td><s:property value="itemPrice"/></td>
 					<td>
 						<select name="count">
 							<option value="1" selected="selected">1</option>
@@ -95,6 +95,9 @@
 						</select>
 					</td>
 				</tr>
+				</s:iterator>
+			</table>
+				<table class="table2">
 				<tr>
 					<td>
 						<span>支払い方法</span>
@@ -109,7 +112,7 @@
 						<s:submit value="購入"/>
 					</td>
 				</tr>
-			</table>
+				</table>
 			</s:form>
 				<div>
 					<p>前画面に戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>

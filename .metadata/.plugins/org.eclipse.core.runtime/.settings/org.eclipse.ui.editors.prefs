@@ -2,6 +2,7 @@ additionIndicationInOverviewRuler=true
 eclipse.preferences.version=1
 glanceColorBackground=255,255,0
 lineNumberRuler=true
+net.sf.eclipsecs.error.text.style=NONE
 overviewRuler_migration=migrated_3.1
 printMargin=true
 printMarginColumn=120
