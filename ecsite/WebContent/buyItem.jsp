@@ -75,16 +75,17 @@
 		</div>
 		</s:if>
 		<div>
-			<s:form action="BuyItemAction">
+			<s:form action="BuyItemConfirmAction">
 			<table border="1" class="table1">
 				<tr>
 					<th>#</th><th>商品名</th><th>値段</th><th>購入個数</th>
 				</tr>
 				<s:iterator value="buyItemDTOList">
+				<s:hidden name="id" value="%{id}"/>
 				<tr>
 					<td><s:checkbox name="checkList" value="checked" fieldValue="%{id}"/></td>
-					<td><s:property value="itemName"/></td>
-					<td><s:property value="itemPrice"/></td>
+					<td><s:property value="itemName"/><s:hidden name="itemName" value="%{itemName}"/></td>
+					<td><s:property value="itemPrice"/><s:hidden name="itemPrice" value="%{itemPrice}"/></td>
 					<td>
 						<select name="count">
 							<option value="1" selected="selected">1</option>

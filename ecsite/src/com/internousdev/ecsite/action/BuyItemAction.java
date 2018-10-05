@@ -96,8 +96,4 @@ public class BuyItemAction extends ActionSupport implements SessionAware{
 	public void setPay(String pay) {
 		this.pay = pay;
 	}
-
-
-
-
 }
