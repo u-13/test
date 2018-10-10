@@ -67,7 +67,7 @@
 				<s:form action="AddItemCompleteAction">
 				<tr id="box">
 					<td>
-						<label>商品名:</label>
+						<label>商品名：</label>
 					</td>
 					<td>
 						<s:property value="itemName" escape="false"/>
@@ -75,7 +75,7 @@
 				</tr>
 				<tr id="box">
 					<td>
-						<label>値段：</label>
+						<label>価格：</label>
 					</td>
 					<td>
 						<s:property value="itemPrice" escape="false"/>

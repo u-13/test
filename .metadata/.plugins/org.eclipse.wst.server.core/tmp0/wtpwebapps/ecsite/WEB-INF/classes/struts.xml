@@ -69,12 +69,20 @@
 			<result name="back">buyItem.jsp</result>
 		</action>
 
+		<!-- BuyItemCompleteAction -->
+		<action name="BuyItemCompleteAction"
+				class="com.internousdev.ecsite.action.BuyItemCompleteAction"
+				method="execute">
+			<result name="success">buyItemComplete.jsp</result>
+			<result name="error">buyItemConfirm.jsp</result>
+		</action>
+
 		<!-- MyPageAction -->
 		<action name="MyPageAction"
 				class="com.internousdev.ecsite.action.MyPageAction"
 				method="execute">
 			<result name="success">myPage.jsp</result>
-			<result name="error">error.jsp</result>
+			<result name="error">home.jsp</result>
 		</action>
 
 		<!-- LogoutAction -->
@@ -96,6 +104,13 @@
 				class="com.internousdev.ecsite.action.AddItemConfirmAction"
 				method="execute">
 			<result name="success">addItemConfirm.jsp</result>
+		</action>
+
+		<!-- AddItemCompleteAction -->
+		<action name="AddItemCompleteAction"
+				class="com.internousdev.ecsite.action.AddItemCompleteAction"
+				method="execute">
+			<result name="success">addItemComplete.jsp</result>
 		</action>
 
 	</package>

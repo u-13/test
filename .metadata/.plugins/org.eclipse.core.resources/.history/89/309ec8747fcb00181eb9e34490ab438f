@@ -1,0 +1,25 @@
+package com.internousdev.ecsite.action;
+
+import java.util.Map;
+
+import org.apache.struts2.interceptor.SessionAware;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class BuyItemCompleteAction extends ActionSupport implements SessionAware{
+
+	private Map<String,Object> session;
+
+//	商品購入情報登録完了メソッド
+	@SuppressWarnings("unchecked")
+	public String execute(){
+		System.out.println("BuyItemCompleteAction------");
+		String result = ERROR;
+		String loginUserId = session.get("login_user_id").toString();
+		System.out.println("loginUserId:"+loginUserId);
+
+		return result;
+	}
+
+
+}

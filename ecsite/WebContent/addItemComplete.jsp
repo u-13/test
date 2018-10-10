@@ -54,6 +54,22 @@
 	</style>
 </head>
 <body>
-
+	<div id="header">
+		<div id="pr"></div>
+	</div>
+	<div id="main">
+		<div id="top">
+			<p>AddItemComplete</p>
+		</div>
+		<div>
+			<h3>商品の追加登録が完了しました。</h3>
+			<div>
+				<a href='<s:url action="GoHomeAction"/>'>ホームへ</a>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="pr"></div>
+	</div>
 </body>
 </html>

@@ -73,17 +73,16 @@
 			<table>
 				<tr>
 					<td>商品名</td>
-					<td>値段</td>
+					<td>価格</td>
 					<td>購入個数</td>
 					<td>支払い方法</td>
 				</tr>
 				<s:iterator value="#session.buyItemDTOList">
-				<s:hidden name="id" value="%{id}"/>
 				<tr>
-					<td><s:property value="itemName"/><s:hidden name="itemName" value="%{itemName}" /></td>
-					<td><s:property value="itemPrice"/><s:hidden name="itemPrice" value="%{itemPrice}" /></td>
-					<td><s:property value="count"/><span>個</span><s:hidden name="count" value="%{count}" /></td>
-					<td><s:property value="pay"/><s:hidden name="pay" value="%{pay}" /></td>
+					<td><s:property value="itemName"/></td>
+					<td><s:property value="itemPrice"/><span>円</span></td>
+					<td><s:property value="count"/></td>
+					<td><s:property value="pay"/></td>
 				</tr>
 				</s:iterator>
 				<tr>

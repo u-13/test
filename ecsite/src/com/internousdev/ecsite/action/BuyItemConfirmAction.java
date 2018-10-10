@@ -46,24 +46,33 @@ public class BuyItemConfirmAction extends ActionSupport implements SessionAware{
 			System.out.println(itemPriceList[c]);
 			System.out.println(countList[c]);
 			BuyItemDTO dto = new BuyItemDTO();
-			dto.setId(Integer.parseInt(idList[c].toString()));
+			dto.setId(idList[c].toString());
 			dto.setItemName(itemNameList[c].toString());
 			dto.setItemPrice(itemPriceList[c].toString());
 			dto.setCount(countList[c].toString());
+
+			if(pay.equals("1")) {
+				pay = "現金払い";
+			} else {
+				pay = "クレジットカード払い";
+			}
+
 			dto.setPay(pay);
 			buyItemDTOList.add(dto);
 		}
 
 		session.put("buyItemDTOList", buyItemDTOList);
 
-//		buyItemCompleteDAO.buyItemInfo(
-//				session.get("id").toString(),
-//				session.get("login_user_id").toString(),
-//				session.get("total_price").toString(),
-//				session.get("count").toString(),
-//				session.get("pay").toString());
 		String result=SUCCESS;
 		return result;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
 	}
 
 	public Collection<String> getCheckList() {

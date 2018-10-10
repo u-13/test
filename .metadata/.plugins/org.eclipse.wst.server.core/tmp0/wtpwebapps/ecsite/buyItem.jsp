@@ -78,14 +78,15 @@
 			<s:form action="BuyItemConfirmAction">
 			<table border="1" class="table1">
 				<tr>
-					<th>#</th><th>商品名</th><th>値段</th><th>購入個数</th>
+					<th>#</th><th>商品ID</th><th>商品名</th><th>価格</th><th>購入個数</th>
 				</tr>
 				<s:iterator value="buyItemDTOList">
-				<s:hidden name="id" value="%{id}"/>
+<%-- 				<s:hidden name="id" value="%{id}"/> --%>
 				<tr>
 					<td><s:checkbox name="checkList" value="checked" fieldValue="%{id}"/></td>
+					<td><s:property value="id"/><s:hidden name="id" value="%{id}"/></td>
 					<td><s:property value="itemName"/><s:hidden name="itemName" value="%{itemName}"/></td>
-					<td><s:property value="itemPrice"/><s:hidden name="itemPrice" value="%{itemPrice}"/></td>
+					<td><s:property value="itemPrice"/><s:hidden name="itemPrice" value="%{itemPrice}"/><span>円</span></td>
 					<td>
 						<select name="count">
 							<option value="1" selected="selected">1</option>
@@ -105,7 +106,7 @@
 					</td>
 					<td>
 						<input type="radio" name="pay" value="1" checked="checked">現金払い
-						<input type="radio" name="pay" value="2">クレジットカード
+						<input type="radio" name="pay" value="2">クレジットカード払い
 					</td>
 				</tr>
 				<tr>

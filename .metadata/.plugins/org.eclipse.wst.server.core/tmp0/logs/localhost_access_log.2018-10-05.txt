@@ -49,3 +49,7 @@
 0:0:0:0:0:0:0:1 - - [05/Oct/2018:16:23:42 +0900] "POST /ecsite/AddItemAction.action HTTP/1.1" 200 1896
 0:0:0:0:0:0:0:1 - - [05/Oct/2018:16:24:04 +0900] "POST /ecsite/AddItemConfirmAction.action HTTP/1.1" 200 1889
 0:0:0:0:0:0:0:1 - - [05/Oct/2018:16:24:06 +0900] "POST /ecsite/AddItemCompleteAction HTTP/1.1" 200 3455
+127.0.0.1 - - [05/Oct/2018:16:54:46 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [05/Oct/2018:16:54:47 +0900] "GET /ecsite/buyItemComplete.jsp HTTP/1.1" 200 1534
+127.0.0.1 - - [05/Oct/2018:17:38:28 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [05/Oct/2018:17:38:30 +0900] "GET /ecsite/buyItemConfirm.jsp HTTP/1.1" 200 2210

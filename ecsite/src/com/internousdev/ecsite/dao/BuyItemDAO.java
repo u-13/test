@@ -22,7 +22,7 @@ public class BuyItemDAO {
 			ResultSet resultSet=preparedStatement.executeQuery();
 			while(resultSet.next()){
 				BuyItemDTO buyItemDTO = new BuyItemDTO();
-				buyItemDTO.setId(resultSet.getInt("id"));
+				buyItemDTO.setId(resultSet.getString("id"));
 				buyItemDTO.setItemName(resultSet.getString("item_name"));
 				buyItemDTO.setItemPrice(resultSet.getString("item_price"));
 				buyItemDTOList.add(buyItemDTO);

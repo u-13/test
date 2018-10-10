@@ -1,0 +1,45 @@
+package com.internousdev.ecsite.action;
+
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+
+import org.apache.struts2.interceptor.SessionAware;
+
+import com.internousdev.ecsite.dao.BuyItemCompleteDAO;
+import com.internousdev.ecsite.dto.BuyItemDTO;
+import com.opensymphony.xwork2.ActionSupport;
+
+public class BuyItemCompleteAction extends ActionSupport implements SessionAware{
+
+	public Map<String,Object> session;
+	private String errorMessage;
+
+//	商品購入情報登録完了メソッド
+	@SuppressWarnings("unchecked")
+	public String execute(){
+		System.out.println("BuyItemCompleteAction------");
+		String result = ERROR;
+		String loginUserId = session.get("login_user_id").toString();
+		System.out.println("loginUserId:"+loginUserId);
+
+		List<BuyItemDTO> buyItemDTOList = (List<BuyItemDTO>) session.get("buyItemDTOList");
+		for(int i=0; i < buyItemDTOList.size(); i++){
+			id=buyItemDTOList.get(i).getId();
+			int count = Integer.parseInt(buyItemDTOList.get(i).getCount());
+			int price = Integer.parseInt(buyItemDTOList.get(i).getItemPrice());
+			int totalPrice = count * price;
+			int totalCount = count;
+			String userMasterId = loginUserId;
+			String pay = buyItemDTOList.get(i).getPay();
+
+			BuyItemCompleteDAO dao = new BuyItemCompleteDAO();
+			//TODO 後で確認
+			dao.buyItemInfo(id, price, userMasterId, totalPrice, totalCount, pay);
+		}
+
+		return result;
+	}
+
+
+}

@@ -74,7 +74,7 @@
 				</tr>
 				<tr>
 					<td>
-						<label>値段：</label>
+						<label>価格：</label>
 					</td>
 					<td>
 						<input type="text" name="itemPrice" value=""/>
