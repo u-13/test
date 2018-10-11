@@ -27,7 +27,6 @@ public class HomeAction extends ActionSupport implements SessionAware{
 	public List<BuyItemDTO> getBuyItemDTOList() {
 		return buyItemDTOList;
 	}
-
 	public void setBuyItemDTOList(List<BuyItemDTO> buyItemDTOList) {
 		this.buyItemDTOList = buyItemDTOList;
 	}
@@ -36,7 +35,6 @@ public class HomeAction extends ActionSupport implements SessionAware{
 	public void setSession(Map<String, Object> session) {
 		this.session =session;
 	}
-
 	public Map<String, Object> getSession() {
 		return this.session;
 	}
