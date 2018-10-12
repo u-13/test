@@ -9,7 +9,6 @@
 <fullyQualifiedTypeName name="com.internousdev.ecsite.dao.BuyItemCompleteDAO"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="com.mysql.jdbc.PreparedStatement"/>
-<fullyQualifiedTypeName name="com.internousdev.ecsite2.util.DBConnector"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="com.internousdev.ecsite2.dto.BuyItemDTO"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
@@ -19,4 +18,5 @@
 <fullyQualifiedTypeName name="com.internousdev.ecsite2.dao.BuyItemDAO"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="com.internousdev.ecsite2.util.DBConnector"/>
 </qualifiedTypeNameHistroy>
