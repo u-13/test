@@ -8,7 +8,6 @@ import java.util.Map;
 
 import org.apache.struts2.interceptor.SessionAware;
 
-import com.internousdev.ecsite.dao.BuyItemCompleteDAO;
 import com.internousdev.ecsite.dto.BuyItemDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
@@ -22,10 +21,6 @@ public class BuyItemConfirmAction extends ActionSupport implements SessionAware{
 	private String pay;
 
 	private List<BuyItemDTO> buyItemDTOList = new ArrayList<BuyItemDTO>();
-
-
-
-	private BuyItemCompleteDAO buyItemCompleteDAO=new BuyItemCompleteDAO();
 
 	public String execute()throws SQLException{
 		System.out.println(checkList);
