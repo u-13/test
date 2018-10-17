@@ -10,7 +10,7 @@ import com.internousdev.ecsite2.dao.BuyItemDAO;
 import com.internousdev.ecsite2.dto.BuyItemDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
-public class HomeAction extends ActionSupport implements SessionAware{
+public class HomeAction extends ActionSupport implements SessionAware {
 	public Map<String, Object> session;
 	private List<BuyItemDTO> buyItemDTOList = new ArrayList<BuyItemDTO>();
 	public String execute() {
@@ -33,7 +33,7 @@ public class HomeAction extends ActionSupport implements SessionAware{
 
 	@Override
 	public void setSession(Map<String, Object> session) {
-		this.session =session;
+		this.session = session;
 	}
 	public Map<String, Object> getSession() {
 		return this.session;

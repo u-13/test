@@ -12,7 +12,6 @@ INDEX VERSION 1.127+C:\Users\internousdev\Desktop\workspace\workspace-matsunaga\
 2795423174.index
 2591328031.index
 2482979802.index
-1270614830.index
 3309818282.index
 4083127712.index
 3377618434.index
