@@ -49,8 +49,8 @@
 	}
 	#main {
 		width:100%;
-		height:80px;
-		background-color:black;
+		height:500px;
+		text-align:center;
 	}
 	#footer {
 		width:100%;
@@ -87,7 +87,7 @@
 					<td><s:checkbox name = "checkList" value = "checked" fieldValue = "%{id}"/></td>
 					<td><s:property value = "id"/><s:hidden name = "id" value = "%{id}"/></td>
 					<td><s:property value = "itemName"/><s:hidden name = "itemName" value = "%{itemName}"/></td>
-					<td><s:property value = "itemPrice"/><s:hidden name = "itemPrice" value = "%{itemPrice}"/></td>
+					<td><s:property value = "itemPrice"/><s:hidden name = "itemPrice" value = "%{itemPrice}"/><span>円</span></td>
 					<td>
 						<select name = "count">
 							<option value = "1" selected = "selected">1</option>

@@ -26,6 +26,8 @@
 		background:#fff;
 	}
 	table {
+		width:550px;
+		border-collapse:collapse;
 		text-align:center;
 		margin:0 auto;
 	}
@@ -52,10 +54,7 @@
 		background-color:black;
 		clear:both;
 	}
-	#text-right{
-		display:inline-block;
-		text-align:right;
-	}
+
 </style>
 </head>
 <body>
@@ -90,6 +89,7 @@
 				</tr>
 			</s:iterator>
 			</table>
+			<br>
 			<s:form action = "MyPageAction">
 				<input type = "hidden" name = "deleteFlg" value = "1">
 				<s:submit value = "削除" method = "delete"/>

@@ -22,10 +22,17 @@
 		line-height:1.6;
 		letter-spacing:1px;
 		font-family:Verdana, Helvetica, sans-serif;
+		font-size:12px;
 		color:#333;
 		background:#fff;
 	}
-	table {
+	.table1 {
+		width:300px;
+		border-collapse:collapse;
+		text-align:center;
+		margin:0 auto;
+	}
+	.table2 {
 		text-align:center;
 		margin:0 auto;
 	}
@@ -69,13 +76,13 @@
 			<p>BuyItem</p>
 		</div>
 		<div>
-			<s:form>>
-			<table>
+			<s:form>
+			<table border = "1" class = "table1">
 				<tr>
-					<td>商品名</td>
-					<td>価格</td>
-					<td>購入個数</td>
-					<td>支払い方法</td>
+					<th>商品名</th>
+					<th>価格</th>
+					<th>購入個数</th>
+					<th>支払い方法</th>
 				</tr>
 				<s:iterator value = "#session.buyItemDTOList">
 				<tr>
@@ -85,9 +92,9 @@
 					<td><s:property value = "pay"/></td>
 				</tr>
 				</s:iterator>
-				<tr>
-					<td><br></td>
-				</tr>
+			</table>
+			<br>
+			<table class = "table2">
 				<tr>
 					<td><input type = "button" value = "戻る"
 							onclick = "submitAction('HomeAction')"/>
