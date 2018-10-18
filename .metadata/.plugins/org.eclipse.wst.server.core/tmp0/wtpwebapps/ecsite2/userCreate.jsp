@@ -70,7 +70,7 @@
 			<s:form action = "UserCreateConfirmAction">
 				<tr>
 					<td>
-						<label>ログインID：</label>
+						<label>ログインID </label>
 					</td>
 					<td>
 						<input type = "text" name = "loginUserId" value = ""/>
@@ -78,7 +78,7 @@
 				</tr>
 				<tr>
 					<td>
-						<label>ログインPASS：</label>
+						<label>ログインPASS </label>
 					</td>
 					<td>
 						<input type = "text" name = "loginPassword" value = ""/>
@@ -86,7 +86,7 @@
 				</tr>
 				<tr>
 					<td>
-						<label>ユーザーID：</label>
+						<label>ユーザーID </label>
 					</td>
 					<td>
 						<input type = "text" name = "userName" value = ""/>

@@ -60,30 +60,30 @@
 </style>
 </head>
 <body>
-	<div id="header">
+	<div id = "header">
 		<div id="pr"></div>
 	</div>
-	<div id="main">
+	<div id = "main">
 		<div id="top">
 			<p>Login</p>
 		</div>
 		<div>
 			<h3>商品を購入する際にはログインをお願いします。</h3>
 			<s:form action="LoginAction">
-				<s:textfield name="loginUserId"/>
-				<s:password name="loginPassword"/>
+				<p>ログインID <s:textfield name="loginUserId"/></p>
+				<p>パスワード <s:password name="loginPassword"/></p>
 				<s:submit value="ログイン"/>
 			</s:form>
 			<br>
-			<div id="text-link">
-				<p>新規ユーザー登録は
-					<a href='<s:url action="UserCreateAction"/>'>こちら</a></p>
-				<p>ホームへ戻る場合は
-					<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>
+			<div id = "text-link">
+				<span>新規ユーザー登録は
+					<a href='<s:url action="UserCreateAction"/>'>こちら</a>
+				</span>
 			</div>
+			<p><a href='<s:url action="GoHomeAction"/>'>ホーム画面へもどる</a></p>
 		</div>
 	</div>
-	<div id="footer">
+	<div id = "footer">
 		<div id="pr"></div>
 	</div>
 </body>
