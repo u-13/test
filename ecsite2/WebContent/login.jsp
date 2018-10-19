@@ -80,7 +80,7 @@
 					<a href='<s:url action="UserCreateAction"/>'>こちら</a>
 				</span>
 			</div>
-			<p><a href='<s:url action="GoHomeAction"/>'>ホーム画面へもどる</a></p>
+			<p><a href='<s:url action="GoHomeAction"/>'>ホーム</a>へ</p>
 		</div>
 	</div>
 	<div id = "footer">

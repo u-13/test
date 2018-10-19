@@ -99,7 +99,7 @@
 			<h3><s:property value = "message"/></h3>
 		</s:if>
 		<div id = "text-right">
-			<p><a href = '<s:url action = "GoHomeAction"/>'>ホーム画面へもどる</a></p><br>
+			<p><a href = '<s:url action = "GoHomeAction"/>'>ホーム</a>へ</p><br>
 			<p><a href = '<s:url action = "LogoutAction"/>'>ログアウト</a></p>
 		</div>
 		</div>

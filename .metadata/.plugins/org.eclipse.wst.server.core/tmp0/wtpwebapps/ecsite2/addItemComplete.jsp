@@ -66,7 +66,7 @@
 			<h3>商品の追加登録が完了しました。</h3>
 		</div>
 		<div>
-			<a href = '<s:url action = "GoHomeAction"/>'>ホームへ</a>
+			<a href = '<s:url action = "GoHomeAction"/>'>ホーム</a>へ
 		</div>
 	</div>
 	<div id = "footer">

@@ -1,0 +1,10 @@
+package practice;
+
+public class Main {
+	public static void main(String[] args) {
+		System.out.println("まつなが");
+		System.out.println(23 + 49);
+		System.out.println(46 * 31);
+		System.out.println(-43 + 38);
+	}
+}

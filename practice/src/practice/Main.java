@@ -1,0 +1,30 @@
+package practice;
+
+public class Main {
+	public static void main(String[] args) {
+		System.out.println("まつなが");
+		System.out.println(23 + 49);
+		System.out.println(46 * 31);
+		System.out.println(-43 + 38);
+		int x;
+		x = 4;
+		System.out.println(x * 50);
+		int age; //年齢を入れる箱
+		age = 20;
+		System.out.println("私は" + age + "歳");
+		age = 21;
+		System.out.println("本当は" + age);
+		final double TAX = 1.08;
+		int ps4 = 5;
+		System.out.println("5万円から4万円に値下げします");
+		ps4 = 4;
+		System.out.println("PS4の新価格 （税込み）");
+		System.out.println(ps4 * TAX + "万円");
+
+//		練習 1-2
+		int a = 3;
+		int b = 5;
+		int c = a * b;
+		System.out.println("縦幅" + a + "横幅" + b + "の長方形の面積は、" + c);
+	}
+}
