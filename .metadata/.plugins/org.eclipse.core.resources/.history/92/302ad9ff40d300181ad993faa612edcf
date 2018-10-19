@@ -106,13 +106,5 @@
 				method = "execute">
 			<result name = "success">addItemConfirm.jsp</result>
 		</action>
-
-		<!-- AddItemCompleteAction -->
-		<action name = "AddItemCompleteAction"
-				class = "com.internousdev.ecsite2.action.AddItemCompleteAction"
-				method = "execute">
-			<result name = "success">addItemComplete.jsp</result>
-		</action>
-
 	</package>
 </struts>

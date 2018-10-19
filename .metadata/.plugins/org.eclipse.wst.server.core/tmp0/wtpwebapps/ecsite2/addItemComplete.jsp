@@ -1,22 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<% taglib prefix="s" uri="/struts-tags" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
 <html>
 <head>
-
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="Content-Style-Type" content="text/css"/>
 <meta http-equiv="Content-Script-Type" content="text/javascript"/>
 <meta http-equiv="imagetoolbar" content="no"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
 
-<title>Login画面</title>
+<title>AddItemComplete画面</title>
 
 <style type="text/css">
-/* ====== TAG LAYOUT ====== */
-	body {
+/* ======TAG LAYOUT====== */
+	body{
 		margin:0;
 		padding:0;
 		line-height:1.6;
@@ -26,65 +25,52 @@
 		color:#333;
 		background:#fff;
 	}
-	table {
+	table{
 		text-align:center;
 		margin:0 auto;
 	}
 
-/* ====== ID LAYOUT ====== */
-	#top {
+/* ======ID LAYOUT====== */
+	#top{
 		width:780px;
 		margin:30px auto;
 		border:1px solid #333;
 	}
-	#header {
+	#header{
 		width:100%;
 		height:80px;
 		backgroud-color:black;
 	}
-	#main {
+	#main{
 		width:100%;
 		height:500px;
 		text-align:center;
 	}
-	#footer {
+	#footer{
 		width:100%;
 		height:80px;
 		background-color:black;
 		clear:both;
 	}
-	#text-link {
-		display:inline-block;
-		text-align:right;
-	}
 </style>
 </head>
 <body>
-	<div id="header">
-		<div id="pr"></div>
+	<div id = "header">
+		<div id = "pr"></div>
 	</div>
-	<div id="main">
-		<div id="top">
-			<p>Login</p>
+	<div id = "main">
+		<div id = "top">
+			<p>AddItemComplete</p>
 		</div>
 		<div>
-			<h3>商品を購入する際にはログインをお願いします。</h3>
-			<s:form action="LoginAction">
-				<s:textfield name="loginUserId"/>
-				<s:password name="loginPassword"/>
-				<s:submit value="ログイン"/>
-			</s:form>
-			<br>
-			<div id="text-link">
-				<p>新規ユーザー登録は
-					<a href='<s:url action="UserCreateAction"/>'>こちら</a></p>
-				<p>ホームへ戻る場合は
-					<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>
-			</div>
+			<h3>商品の追加登録が完了しました。</h3>
+		</div>
+		<div>
+			<a href = '<s:url action = "GoHomeAction"/>'>ホームへ</a>
 		</div>
 	</div>
-	<div id="footer">
-		<div id="pr"></div>
+	<div id = "footer">
+		<div id = "pr"></div>
 	</div>
 </body>
 </html>
