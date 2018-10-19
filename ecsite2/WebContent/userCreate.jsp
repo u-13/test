@@ -39,7 +39,7 @@
 	#header {
 		width:100%;
 		height:80px;
-		backgroud-color:black;
+		background-color:black;
 	}
 	#main {
 		width:100%;
@@ -92,9 +92,13 @@
 						<input type = "text" name = "userName" value = ""/>
 					</td>
 				</tr>
-				<s:submit value = "登録"/>
+				<tr>
+					<td>
+						<s:submit value = "登録"/>
+					</td>
+				</tr>
 			</s:form>
-			</table>
+			</table><br>
 			<div>
 				<span>前画面に戻る場合は</span>
 				<a href = '<s:url action = "HomeAction"/>'>こちら</a>

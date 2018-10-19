@@ -41,6 +41,11 @@
 		height:80px;
 		background-color:black;
 	}
+	#main {
+		width:100%;
+		height:500px;
+		text-align:center;
+	}
 	#footer {
 		width:100%;
 		height:80px;
@@ -60,12 +65,12 @@
 		<div>
 			<h3>ユーザーの登録が完了しました。</h3>
 			<div>
-				<a href = '<s:url action = "HomeAction"/>'>ログインへ</a>
+				<a href = '<s:url action = "HomeAction"/>'>ログイン</a>へ
 			</div>
 		</div>
-		<div id = "footer">
+	</div>
+	<div id = "footer">
 			<div id = "pr"></div>
-		</div>
 	</div>
 </body>
 </html>

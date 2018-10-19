@@ -39,7 +39,7 @@
 	#header {
 		width:100%;
 		height:80px;
-		backgroud-color:black;
+		background-color:black;
 	}
 	#main {
 		width:100%;
@@ -90,7 +90,9 @@
 						</td>
 					</tr>
 					<tr>
-						<s:submit value = "登録"/>
+						<td>
+							<s:submit value = "登録"/>
+						</td>
 					</tr>
 				</s:form>
 			</table>

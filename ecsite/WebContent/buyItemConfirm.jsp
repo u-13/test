@@ -39,7 +39,7 @@
 		#header{
 			width:100%;
 			height:80px;
-			backgroud-color:black;
+			background-color:black;
 		}
 		#main{
 			width:100%;

@@ -53,7 +53,7 @@
 		height:500px;
 		text-align:center;
 	}
-	#fotter {
+	#footer {
 		width:100%;
 		height:80px;
 		background-color:black;
@@ -106,10 +106,6 @@
 			</table>
 			</s:form>
 		</div>
-	</div>
-	<div>
-		<p>前画面に戻る場合は<a href = '<s:url action = "GoHomeAction"/>'>こちら</a></p>
-		<p>マイページは<a href = '<s:url action = "MyPageAction"/>'></a></p>
 	</div>
 	<div id = "footer">
 		<div id = "pr"></div>

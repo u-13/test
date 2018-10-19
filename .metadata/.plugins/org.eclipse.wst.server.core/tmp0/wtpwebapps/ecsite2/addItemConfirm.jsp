@@ -39,7 +39,7 @@
 	#header{
 		width:100%;
 		height:80px;
-		backgroud-color:black;
+		background-color:black;
 	}
 	#main{
 		width:100%;
@@ -79,7 +79,7 @@
 							<label>価格：</label>
 						</td>
 						<td>
-							<s:property value = "itemPrice" escape = "false"/>
+							<s:property value = "itemPrice" escape = "false"/><span>円</span>
 						</td>
 					</tr>
 					<tr>

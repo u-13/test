@@ -94,13 +94,13 @@
 				<input type = "hidden" name = "deleteFlg" value = "1">
 				<s:submit value = "削除" method = "delete"/>
 			</s:form>
-		</s:elseif>
+		</s:elseif><br>
 		<s:if test = "message! = null">
 			<h3><s:property value = "message"/></h3>
 		</s:if>
 		<div id = "text-right">
-			<p>Homeへ戻る場合は<a href = '<s:url action = "GoHomeAction"/>'>こちら</a></p>
-			<p>ログアウトする場合は<a href = '<s:url action = "LogoutAction"/>'>こちら</a></p>
+			<p><a href = '<s:url action = "GoHomeAction"/>'>ホーム画面へもどる</a></p><br>
+			<p><a href = '<s:url action = "LogoutAction"/>'>ログアウト</a></p>
 		</div>
 		</div>
 	</div>
