@@ -27,13 +27,16 @@ public class Main {
 		int c = a * b;
 		System.out.println("縦幅" + a + "横幅" + b + "の長方形の面積は、" + c);
 
+//		練習 1-3
+		boolean result = true;
+		char moji = '駆';
+		double pi = 3.14;
+		long number = 314159265853979L;
+		String message = "ミナトの攻撃！　敵に15ポイントのダメージを与えた。";
+
 		a = 20;
 		b = a + 5;
 		System.out.println(a);
 		System.out.println(b);
-		System.out.println("私の好きな記号は二重引用符(\")です");
-		a = 100;
-		a++;
-		System.out.println(a);
 	}
 }
