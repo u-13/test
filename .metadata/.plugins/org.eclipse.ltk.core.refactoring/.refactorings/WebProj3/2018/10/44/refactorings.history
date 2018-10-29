@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="フィールド &apos;com.internousdev.webproj3.dto.InquiryDTO.body&apos; を &apos;com.internousdev.webproj3.dto.InquiryDTO&apos;にカプセル化します&#x0D;&#x0A;- 元のプロジェクト: &apos;WebProj3&apos;&#x0D;&#x0A;- オリジナル要素: &apos;com.internousdev.webproj3.dto.InquiryDTO.body&apos;&#x0D;&#x0A;- getter メソッド名: &apos;getBody&apos;&#x0D;&#x0A;- setter メソッド名: &apos;setBody&apos;&#x0D;&#x0A;- フィールドの可視性: &apos;public&apos;&#x0D;&#x0A;- 宣言型の getter および setter メソッドを使用" comments="false" declaring="true" description="フィールド &apos;body&apos; をカプセル化します" flags="589830" getter="getBody" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;com.internousdev.webproj3.dto{InquiryDTO.java[InquiryDTO^body" insertion="3" setter="setBody" stamp="1540799369806" version="1.0" visibility="1"/>
+</session>

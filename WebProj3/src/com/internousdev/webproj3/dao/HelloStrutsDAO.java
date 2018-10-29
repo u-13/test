@@ -5,10 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import
+import com.internousdev.webproj3.dto.HelloStrutsDTO;
 import com.internousdev.webproj3.util.DBConnector;
-import com.mysql.jdbc.Connection;
-import com.mysql.jdbc.PreparedStatement;
 
 public class HelloStrutsDAO {
 	public HelloStrutsDTO select() {
